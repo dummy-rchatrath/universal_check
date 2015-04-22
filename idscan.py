@@ -32,7 +32,7 @@ while True:
  #unless it will be used for local storage
     def write_to_csv(arg):
         '''Function to write to csv'''
-        write = csv.DictWriter(fa, arg.keys())
+        write = csv.DictWriter(arg.keys())
         write.writeheader()
         write.writerow(arg)
  #Add data to dictionary and organize based on hall
